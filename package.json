@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "jspdf": "^4.2.1",
+    "jspdf-autotable": "^5.0.8",
+    "lucide-react": "^1.24.0",
+    "react-icons": "^5.7.0",
+    "sonner": "^2.0.7"
+  }
+}

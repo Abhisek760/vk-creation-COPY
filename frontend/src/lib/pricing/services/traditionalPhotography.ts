@@ -1,0 +1,4 @@
+import { calculatePerDay } from '@/lib/calculateServicePrice';
+export default function traditionalPhotography(days: number, rate: number) {
+  return calculatePerDay(days, rate);
+}

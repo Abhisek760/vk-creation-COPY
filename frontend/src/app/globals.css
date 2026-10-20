@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+/* ==========================================
+   VK Creation Design System
+========================================== */
+
+:root {
+  /* Colors */
+  --background: #0a0a0a;
+  --foreground: #ffffff;
+
+  --gold: #d4af37;
+  --gold-light: #f4d77b;
+
+  --gray: #b5b5b5;
+  --border: rgba(255, 255, 255, 0.08);
+
+  /* Fonts */
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --font-sans: var(--font-body);
+}
+
+/* ==========================================
+   Base
+========================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ==========================================
+   Headings
+========================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading), serif;
+}
+
+/* ==========================================
+   Selection
+========================================== */
+
+::selection {
+  background: var(--gold);
+  color: #000;
+}
+
+/* ==========================================
+   Scrollbar
+========================================== */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gold);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold-light);
+}
+
+/* ==========================================
+   Links
+========================================== */
+
+a {
+  transition: all 0.3s ease;
+}
+
+/* ==========================================
+   Form Controls
+   (Fix white text inside white inputs)
+========================================== */
+
+input,
+textarea,
+select {
+  background: #ffffff;
+  color: #111827;
+  caret-color: #111827;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #9ca3af;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+/* Autofill Fix */
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+  -webkit-text-fill-color: #111827;
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+/* ==========================================
+   Images
+========================================== */
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ==========================================
+   Buttons
+========================================== */
+
+button {
+  cursor: pointer;
+}
